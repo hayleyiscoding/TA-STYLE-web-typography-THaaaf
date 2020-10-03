@@ -1,0 +1,282 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* General */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 32px;
+}
+.flex {
+    display: flex;
+    Justify-content: space-between;
+    align-items: center;
+}
+.col {
+    flex: 0 1 50%;
+}
+.col-left {
+    padding-right: 50px;
+}
+.col-right {
+    padding-left: 50px;
+}
+.padding {
+    padding: 80px 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+.btn-primary {
+    color: #818086;
+    border: 1px solid #818086;
+    font-family: 'Karla', sans-serif;
+}
+.btn-secondary {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Header and Fonts */
+.heading {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 16px;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: -1.3px;
+}
+.text {
+    color:white;
+    line-height: 1.7;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin-bottom: 10px;
+}
+.h1 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+/* Clearfix */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* Color Codes */
+/* #2D2640 - Dark Blue - Hero */
+/* #818086 - Grey Text */
+/* #8AB4F0 - Light Blue */
+
+/* Header */
+.header {
+    padding: 0 0 10px 0;
+}
+.brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2D2640;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+.nav {
+    padding-bottom: 8px;
+}
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #818086;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+    background-color: #2D2640;
+    height: 500px;
+}
+hr {
+    margin-top: 20px;
+    width: 35%;
+    display: inline-block;
+}
+
+/* Hero Image */
+.hero-image {
+    margin-top: -440px;
+}
+.hero-img {
+    width: 100%;
+}
+
+/* About */
+.about {
+   margin-top: -30px;
+   padding: 60px 0;
+}
+.about img {
+   width: 90%;
+}
+.h2 {
+    color:#2D2640;
+    font-size: 35px;
+}
+.about p {
+    color: #818086;
+    margin-bottom: 5px;
+}
+.about-article {
+    padding-left: 30px;
+}
+
+/* We are Different */
+.we-are-different {
+    margin-bottom: 30px;
+}
+.hr-2 {
+    margin-top: 20px;
+    width: 50%;
+    display: inline-block;
+}
+
+/* Differences */
+.col-1 {
+    margin-right: 50px;
+
+}
+.differences p {
+    color: #6e6d6e;
+    margin-bottom: 50px;
+}
+.h3 {
+    color: #2D2640;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+}
+i {
+    font-size: 30px;
+    color: #8AB4F0;
+    margin-bottom: 20px;
+}
+
+/* How We Work */
+.box {
+    background-color: #2D2640;
+    padding: 40px 0 20px 60px;
+}
+.how-we-work .h2 {
+    color: white;
+    line-height: 1.6;
+    letter-spacing: -0.8px;
+}
+.how-we-work .btn-primary {
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    padding: 10px 25px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+}
+
+/* Social */
+.social {
+    padding: 30px 0 0 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+.links i {
+    margin-left: 20px;
+    color: #6A6970;
+    padding-top: 28px;
+}
+
+/* Footer Nav */
+.footer-nav {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.footer-nav .nav a {
+    text-transform: capitalize;
+}
+
+/* Foooter */
+.footer  {
+    background-color: #2D2640;
+    padding: 30px 0;
+    text-align: center;
+}
+small {
+    color: #818086;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+}
